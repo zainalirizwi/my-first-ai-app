@@ -18,7 +18,7 @@ if st.button("Get Answer"):
     else:
         with st.spinner("Thinking..."):
             response = client.chat.completions.create(
-                model="openai/gpt-oss-120b",,   # a free Groq model
+                model="openai/gpt-oss-120b",  # a free Groq model
                 messages=[
                     {"role": "user", "content": question}
                 ],
